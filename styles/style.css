@@ -171,11 +171,41 @@ section {
   background-color: aqua;
   width: 90%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .latest-art p {
   margin-left: 0.5rem;
+}
+
+/* Latest Stories */
+
+.stories { 
+  /* change at 750px width: ; */
+  padding:1rem 3rem;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.stories li {
+  display: flex;
+  margin: 1rem;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 100%;
+}
+
+.stories-left {
+  min-width: 10vw;
+  min-height: 10vw;
+  width: 15px;
+  height: 15px;
+  max-height: 25vw;
+  max-width: 25vw; 
+  background-color: brown;
+  margin-right: 1rem;
+  flex-shrink: 0;
 }
 
 
