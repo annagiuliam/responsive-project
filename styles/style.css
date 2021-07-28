@@ -196,11 +196,11 @@ section {
   background-color: aqua;
   width: 90%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
 .latest-art p {
-  margin-left: 0.5rem;
+  margin-left: 1rem;
 }
 
 /* Latest Stories */
@@ -263,7 +263,6 @@ section {
   .showcase-6 {
     height: 250px;
     width: 95vw;
-    /* background-color: pink; */
     margin: 0 auto;
   }
 
@@ -296,6 +295,10 @@ section {
   }
 }
 
+@media screen and (min-width: 780px) {
+  
+}
+
 @media screen and (min-width: 1020px) {
   .showcase {
     max-height: 80vh;
@@ -322,5 +325,11 @@ section {
   .showcase-4 {
     grid-column: 5 / span 4;
     grid-row: 3 / span 3;
+  }
+
+  .latest-articles {
+    max-width: 90%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
   }
 }
