@@ -215,7 +215,8 @@ section {
 }
 .stories li {
   display: flex;
-  margin: 1rem;
+  /* margin: 1rem; */
+  border: 1rem solid transparent;
   flex-grow: 0;
   flex-shrink: 0;
   flex-basis: 100%;
@@ -231,6 +232,7 @@ section {
   background-color: brown;
   margin-right: 1rem;
   flex-shrink: 0;
+  border-radius: 50%;
 }
 
 
@@ -296,13 +298,35 @@ section {
 }
 
 @media screen and (min-width: 780px) {
-  
+  .stories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .stories-left {
+    border-radius: 0px;
+    margin-bottom: 1rem;
+    margin-right: 0;
+    width: 100%;
+    min-height:25vw;
+    max-width: 100%;
+    flex-basis: 100%;
+    min-width: 10vw;
+  }
+
+  .stories li {
+    flex-basis: 50%;
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
 }
 
 @media screen and (min-width: 1020px) {
   .showcase {
     max-height: 80vh;
-    /* display: grid; */
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(5, 1fr);
   }
@@ -331,5 +355,22 @@ section {
     max-width: 90%;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
+  }
+
+  .stories {
+    justify-content: flex-start;
+  }
+
+  .stories li {
+    flex-basis: 25%;
+    max-width: 25%;
+  }
+
+  .stories-left {
+    width: 100%;
+    min-height:10vw;
+    max-width: 100%;
+    flex-basis: 100%;
+    min-width: 10vw;
   }
 }
