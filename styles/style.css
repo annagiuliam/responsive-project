@@ -20,6 +20,12 @@ main {
   width: 100%
 }
 
+/* Top Header */
+
+#nav-open-btn {
+  display: none;
+}
+
 #top-header {
   background-color: aqua;
   width: 100%;
@@ -35,11 +41,25 @@ main {
 
 #top-nav {
   display: flex;
+  justify-content: center;
   align-items: center;
   width: 100%;
   min-height:100%;
-  margin-right: 15px;
-  margin-left: 15px;
+  margin-right: 2rem;
+  margin-left: 2rem;
+}
+
+.top-menu {
+  min-width: 65%;
+  max-width: 70%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.top-menu .menu-item {
+  display: inline-block;
+  margin-right: 1rem;
 }
 
 .fa, .nav-btn {
@@ -211,6 +231,9 @@ section {
 
 @media screen and (max-width: 550px) {
 
+  #nav-open-btn {
+    display:inline-block;
+  }  
   .top-menu {
     display: none;
   }
