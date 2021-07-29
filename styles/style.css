@@ -206,6 +206,7 @@ section {
 /* Latest Stories */
 
 .stories { 
+  max-width: 80rem;
   padding:1rem 3rem;
   margin: 0 auto;
   display: flex;
@@ -249,6 +250,43 @@ section {
   min-height: 14rem;
   background-color: blueviolet;
   margin: 1rem;
+  flex-basis: 22%;
+}
+
+/* Newletter */
+
+.newsletter-section {
+  background-color: blueviolet;
+  text-align: center;
+}
+
+.newsletter-section h2 {
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+
+#newsletter-input {
+  width: 80%;
+  max-width: 70rem;
+  height: 3rem;
+  margin-bottom: 3rem;
+}
+
+.nl-icon-list {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  width: 60%;
+  max-width: 40rem;
+}
+
+.nl-icon {
+  margin-left: 1.5rem;
+}
+
+.nl-icon .fab {
+  color: #ffffffa1;
+  font-size: 2rem;
 }
 
 
@@ -282,6 +320,14 @@ section {
     height: 250px;
     width: 95vw;
     margin: 0 auto;
+  }
+
+  .nl-icon {
+    margin-left: 2vw;
+  }
+  
+  .nl-icon .fab {
+    font-size: 6vw;
   }
 
 }
