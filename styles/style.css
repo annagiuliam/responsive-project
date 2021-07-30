@@ -16,6 +16,12 @@ body {
     width: 100% ;
     
 }
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+
 main {
   width: 100%
 }
@@ -260,11 +266,6 @@ section {
   text-align: center;
 }
 
-.newsletter-section h2 {
-  font-size: 2rem;
-  margin-bottom: 3rem;
-}
-
 #newsletter-input {
   width: 80%;
   max-width: 70rem;
@@ -317,6 +318,60 @@ section {
   min-width: 15rem;
   height: 100%;
   margin-right: 1rem;
+}
+
+/* Work  */
+.work-wrapper {
+  margin: 1rem auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: beige;
+  width: 90vw;
+  max-width: 70rem;
+}
+
+
+.work-description {
+  text-align: center;
+  padding: 1rem;
+  flex-basis: 100%;
+  /* width: 100% */
+}
+
+.icons-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  background: beige;
+  flex-basis: 100%;
+  /* width: 100%; */
+}
+
+.work-icon {
+  min-height: 6rem;
+  min-width: 6rem;
+  height:6rem;
+  width: 6rem;
+  flex-basis: 50%;
+  background-color: crimson;
+  border-radius: 50%;
+  margin: 2rem;
+}
+
+.logos-wrapper {
+  flex-basis: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.logo {
+  width: 7rem;  
 }
 
 
@@ -441,8 +496,10 @@ section {
   .videos-wrapper {
     flex-direction: row;
     justify-content: flex-start;
-    max-width:90vw;
-    height: 65vh;
+    width: 70vw;
+    max-width:70rem;
+    height: 50vw;
+    max-height: 45rem;
   }
 
   .video-big {
@@ -474,6 +531,13 @@ section {
     flex-shrink: 1;
   }
 
+  .work-description, .icons-wrapper {
+    flex-basis: 50%;
+  }
+
+  .work-description {
+    text-align: left;
+  }
 }
 
 @media screen and (min-width: 1020px) {
