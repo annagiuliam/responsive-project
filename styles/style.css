@@ -6,11 +6,6 @@
           box-sizing: border-box;
 }
 
-:root {
-    
-}
-
-
 body {
     height: 100vh;
     width: 100% ;
@@ -213,7 +208,7 @@ section {
 }
 .stories li {
   display: flex;
-  border: 1rem solid transparent;
+  margin: 1rem;
   flex-grow: 0;
   flex-shrink: 0;
   flex-basis: 100%;
@@ -490,11 +485,9 @@ section {
   }
 
   .stories li {
-    flex-basis: 50%;
-    max-width: 50%;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    flex-basis: calc(50% - 2rem);
+    max-width: calc(50% - 2rem);
+    display: block;
   }
 
   .videos-wrapper {
@@ -609,8 +602,8 @@ section {
   }
 
   .stories li {
-    flex-basis: 25%;
-    max-width: 25%;
+    flex-basis: calc(25% - 2rem);
+    max-width: calc(25% - 2rem);
   }
 
   .stories-left {
